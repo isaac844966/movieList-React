@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  display: grid;
+  gap: 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+form .row {
+  display: flex;
+  gap: 0.4rem;
+}
+
+form input {
+  height: 4rem;
+  width: 100%;
+  border: none;
+  background-color: rgb(235, 239, 243);
+  border-radius: 10px;
+  padding: 0.2rem 1rem;
+}
+
+form input:focus {
+  outline: none;
+}
+
+button {
+  background-color: rgb(27, 201, 12);
+  border: none;
+  height: 3rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+  width:100%;
+  margin-top:1rem
+}
+.movie-list {
+  display: flex;
+  flex-wrap:wrap ;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.movie-item {
+  width: 15rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin:0 auto
+}
+
+.movie-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-item p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.remove{
+  background-color: rgb(206, 161, 16);
+}
+
+@media screen and (max-width:600px) {
+  .movie-item{
+    width:30rem
+  }
+}
